@@ -9,12 +9,63 @@
   </head>
 
   <body>
-    <header>
-      <div>
-        <img class="Logo" src="./img/Logo.png" alt="Logo image" />
+    <header class="header">
+      <div class="center header_content">
+        <div>
+          <a class="logo" href="./">
+            <img class="logo_image" src="./img/logo.png" alt="Logo image" />
+          </a>
+        </div>
+
+        <nav>
+          <ul class="nav">
+            <li><a class="nav_item nav_item__visible" href="#">ABOUT US</a></li>
+            <li><a class="nav_item" href="#">PROJECTS</a></li>
+            <li><a class="nav_item" href="#">NEWS</a></li>
+            <li><a class="nav_item" href="#">CONTACT</a></li>
+          </ul>
+        </nav>
+
+        <nav>
+          <ul class="social">
+            <li>
+              <a
+                class="social_item"
+                href="https://twitter.com/"
+                target="_blank"
+              >
+                <svg class="social_icon twitter">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="social_item"
+                href="https://www.facebook.com/"
+                target="_blank"
+              >
+                <svg class="social_icon facebook">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a
+                class="social_item"
+                href="https://www.instagram.com/"
+                target="_blank"
+              >
+                <svg class="social_icon instagram">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <div></div>
-      <div></div>
     </header>
 
     <div class="swiper">
@@ -29,9 +80,5 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
-
-    <!-- <svg class="icon">
-      <use xlink:href="#twitter"></use>
-    </svg> -->
   </body>
 </html>

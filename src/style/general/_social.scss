@@ -1,0 +1,42 @@
+@use '../vars/color';
+
+.social {
+  display: flex;
+  gap: 1.25rem;
+
+  &_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 0.0625rem solid color.$white-04;
+    border-radius: 50%;
+    fill: color.$default-white;
+
+    &:focus {
+      outline: 0.125rem solid color.$focus;
+      border-radius: 50%;
+    }
+
+    &:hover {
+      fill: color.$text-hover;
+    }
+  }
+
+  &_icon {
+    height: 1.125rem;
+  }
+}
+
+.facebook {
+  width: 0.625rem;
+}
+
+.twitter {
+  width: 1rem;
+}
+
+.instagram {
+  width: 0.875rem;
+}

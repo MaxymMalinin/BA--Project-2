@@ -1,0 +1,14 @@
+.header {
+  padding-top: 3.25rem;
+  background: linear-gradient(
+    85deg,
+    rgba(85, 183, 255, 1) 0%,
+    rgba(126, 90, 255, 1) 100%
+  );
+
+  &_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

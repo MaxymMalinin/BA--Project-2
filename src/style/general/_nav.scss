@@ -1,0 +1,35 @@
+@use '../vars/color';
+
+.nav {
+  display: flex;
+  gap: 4.375rem;
+  font-family: 'Source Sans Pro';
+  font-size: 0.875rem;
+  line-height: 1.285;
+  color: color.$default-white;
+  text-transform: capitalize;
+
+  &_item:focus {
+    outline: 0.125rem solid color.$focus;
+    border-radius: 0.25rem;
+  }
+
+  &_item:hover {
+    color: color.$text-hover;
+  }
+
+  &_item::before {
+    content: '';
+    display: inline-block;
+    margin-right: 0.875rem;
+    width: 0.5625rem;
+    height: 0.5625rem;
+    border-radius: 50%;
+    border: 0.0625rem solid currentColor;
+  }
+
+  &_item__visible::before {
+    content: '';
+    background-color: color.$default-white;
+  }
+}
